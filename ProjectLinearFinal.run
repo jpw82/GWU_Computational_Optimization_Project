@@ -1,0 +1,9 @@
+reset;
+reset;
+model 'ProjectLinearFinal.mod';
+data 'ProjectFinal.dat';
+option solver knitro;
+option knitro_options  'outlev = 1 mip_maxtime_real = 54000'; 
+solve;
+display x;
+display y;
